@@ -62,7 +62,8 @@ img {
 /* SITE-HEADER-TOP */
 .site-header-top {
     background-color:#f6f6f6;
-    padding: 30px 0px
+    padding: 30px 0px;
+    margin-bottom: 10px;
 }
 .site-header-top-container {
     display: flex;
@@ -131,4 +132,33 @@ img {
 .lang-toggle-link-active {
     background-color:#ffffff;
     color:#000000;
+}
+
+/* SITE-HEADER-BANNER */
+.site-header-banner-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    border-bottom: 1px solid #d1d1d1;
+    padding: 20px 0px;
+    margin-bottom: 40px;
+}
+
+.site-header-banner-list li:not(:last-child) {
+    margin-right: 34px;
+}
+
+.site-header-banner-list li {
+    margin-bottom: 5px;
+}
+
+.site-header-banner-link {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    color:#7f7f7f;
+}
+
+.site-banner-img {
+    display: flex;
 }
