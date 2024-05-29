@@ -1,0 +1,86 @@
+.contact-header {
+    font-size: 24px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.contact-wrapper {
+    display: flex;
+}
+
+.contact-form {
+    width: 696px;
+    margin-right: 10px;
+}
+
+.contact-form input,textarea {
+    padding: 18px 20px;
+    font-size: 16px;
+    border: 1px solid #00000033;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 696px;
+}
+
+.name-and-tel {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.email {
+    margin-bottom: 10px;
+}
+
+.message {
+    margin-bottom: 20px;
+}
+
+.name-and-tel input {
+    width: 343px;
+}
+
+.name-and-tel input:not(:last-child) {
+    margin-right: 10px;
+}
+
+.message textarea {
+    height: 180px;
+    resize: none;
+}
+
+.submit {
+    float: right;
+    padding: 17px 30px;
+}
+
+.contact-list {
+    width: 494px;
+    height: 310px;
+    list-style: none;
+    background-color: #f6f6f6;
+    border-radius: 10px;
+    padding: 40px 25px;
+    color: #000;
+}
+
+.contact-list-item:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.contact-list-item:not(:last-child)::after {
+    content: "";
+    width: 444px;
+    height: 1px;
+    background-color:#d2d2d2;
+    display: block;
+    margin-top: 20px;
+}
+
+.list-header {
+    font-size: 20px;
+    display: block;
+    font-weight: 600;
+    margin-bottom: 7px;
+}
