@@ -1,3 +1,13 @@
+:root {
+    --blue-color: #7296ec;
+    --light-color: #ffffff;
+    --grey-p-color: #7F7F7F;
+    --orange-bg: #F78B3B;
+    --orange-p: #FFD7BA;
+    --light-bg: #F6F6F6;
+    --dark-color: #000000;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +15,7 @@
 }
 
 *:focus {
-    outline: 2px dashed #7296ec;
+    outline: 2px dashed var(--blue-color);
     outline-offset: 2px;
 }
 
@@ -21,8 +31,8 @@ body {
     font-family: "Rubik","Arial",sans-serif;
     font-size: 16px;
     line-height: 22px;
-    background-color: #ffffff;
-    color: #4a4b4c;
+    background-color: var(--light-color);
+    color: var(--grey-p-color);
 }
 
 img {
@@ -54,13 +64,13 @@ img {
 }
 
 .button-primary {
-    background-color:#7296ec;
-    color: #ffffff;
+    background-color:var(--blue-color);
+    color: var(--light-color);
 }
 
 .button-orange {
-    background-color:#f78b3b;
-    color:#ffd7ba;
+    background-color: var(--orange-bg);
+    color: var(--orange-p);
     padding: 13px 30px;
 }
 
@@ -74,7 +84,7 @@ img {
 
 /* SITE-HEADER-TOP */
 .site-header-top {
-    background-color:#f6f6f6;
+    background-color: var(--light-bg);
     padding: 30px 0px;
     margin-bottom: 10px;
 }
@@ -85,7 +95,7 @@ img {
 
 .logo {
     display: flex;
-    background-color:#ffffff;
+    background-color:var(--light-color);
     padding: 8px 6px;
     border-radius: 7px;
     margin-right: 35px;
@@ -116,6 +126,9 @@ img {
     font-size: 14px;
     color: #8d8d8d;
     padding: 15px 20px 15px 40px;
+    background-image: url(../img/search.svg);
+    background-repeat: no-repeat;
+    background-position: 15px center;
 
 }
 
@@ -143,8 +156,8 @@ img {
     border-radius: 50%;
 }
 .lang-toggle-link-active {
-    background-color:#ffffff;
-    color:#000000;
+    background-color:var(--light-color);
+    color: var(--dark-color);
 }
 
 /* SITE-HEADER-BANNER */
@@ -201,8 +214,8 @@ img {
 .article-card {
     display: flex;
     flex-direction: column;
-    background-color: #f6f6f6;
-    color: #4a4b4c;
+    background-color:  var(--light-bg);
+    color: var(--grey-p-color);
     padding: 20px 17px 15px 17px;
     border-radius: 15px;
 }
@@ -213,7 +226,7 @@ img {
 .article-card-link {
     display: inline-block;
     text-decoration: none;
-    color:#000000;
+    color: var(--dark-color);
     font-weight: 500;
 }
 .article-card-text {
@@ -256,7 +269,7 @@ img {
     padding-bottom: 24px;
     padding-left: 30px;
     padding-right: 70px;
-    background-color: #ffd7ba;
+    background-color:  var(--orange-p);
     border-radius: 5px;
     margin-bottom: 60px;
 }
@@ -264,13 +277,13 @@ img {
     margin-right: auto;
     font-size: 20px;
     font-weight: 500;
-    color:#000000;
+    color: var(--dark-color);
     line-height: 26px;
 }
 
 /* WORLD-NEWS */
 .news-heading {
-    color: #000000;
+    color:  var(--dark-color);
     font-size: 24px;
     font-weight: 500;
     margin-bottom: 20px;
@@ -285,7 +298,7 @@ img {
     margin-right: 10px;
 }
 .news-article {
-    background-color: #f6f6f6;
+    background-color:  var(--light-bg);
     display: flex;
     align-items: center;
     border-radius: 15px;
@@ -306,7 +319,7 @@ img {
     font-size: 20px;
     font-weight: 500;
     line-height: 26px;
-    color:#000000;
+    color: var(--dark-color);
     margin-bottom: 10px;
 }
 .news-article-info {
@@ -324,13 +337,13 @@ img {
     padding-left: 17px;
     padding-bottom: 20px;
     border-radius: 15px;
-    background-color: #f6f6f6;
+    background-color:  var(--light-bg);
     margin-bottom: 10px;
 }
 
 .right-side-heading {
     font-size: 24px;
-    color:#000000;
+    color: var(--dark-color);
     font-weight: 500;
     padding-bottom: 25px;
 }
@@ -346,7 +359,7 @@ img {
     font-weight: 500;
     line-height: 24px;
     margin-bottom: 8px;
-    color:#000000;
+    color: var(--dark-color);
 }
 
 .right-side-news-source-time {
@@ -389,7 +402,7 @@ img {
     font-size: 12px;
     line-height: 19px;
     text-decoration: none;
-    color:#ffffff;
+    color:var(--light-color);
 }
 
 .footer-nav-links:not(:last-child) {
@@ -406,7 +419,7 @@ img {
 
 .footer-link-item a{
     text-decoration: none;
-    color:#ffffff;
+    color:var(--light-color);
 }
 
 .footer-bottom-media {
@@ -416,7 +429,7 @@ img {
 }
 
 .footer-bottom-padding {
-    color:#ffffff;
+    color:var(--light-color);
     font-size: 18px;
     font-weight: 500;
 }
